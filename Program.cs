@@ -8,7 +8,9 @@ internal abstract class Program
 
         for (var i = 0; i < 10; i++) Console.Write($"{i} ");
 
-        int[] arr = { 1, 2, 3, 4, 5 };
-        foreach (var number in arr) Console.WriteLine($"{number * 2} ");
+        Console.WriteLine();
+
+        foreach (var number in new[] { 1, 2, 3, 4, 5 })
+            Console.Write($"{number * 2} ");
     }
 }

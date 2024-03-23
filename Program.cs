@@ -16,11 +16,11 @@ internal abstract class Program
 
     private static float Max(IReadOnlyList<int> numbers)
     {
-        var max = numbers[0];
+        var maxInt = numbers[0];
         for (var i = 1; i < numbers.Count; i++)
-            if (numbers[i] > max)
-                max = numbers[i];
+            if (numbers[i] > maxInt)
+                maxInt = numbers[i];
 
-        return max;
+        return maxInt;
     }
 }

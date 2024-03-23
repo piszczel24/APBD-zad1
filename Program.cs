@@ -1,9 +1,11 @@
 ﻿namespace APBDzad1;
 
-class Program
+internal abstract class Program
 {
-    static void Main(string[] args)
+    private static void Main()
     {
         Console.WriteLine("Hello, World!");
+
+        for (var i = 0; i < 10; i++) Console.Write($"{i} ");
     }
 }

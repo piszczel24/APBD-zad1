@@ -4,13 +4,12 @@ internal abstract class Program
 {
     private static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        int[] array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        Console.WriteLine(Average(array));
+    }
 
-        for (var i = 0; i < 10; i++) Console.Write($"{i} ");
-
-        Console.WriteLine();
-
-        foreach (var number in new[] { 1, 2, 3, 4, 5 })
-            Console.Write($"{number * 2} ");
+    private static float Average(IReadOnlyCollection<int> numbers)
+    {
+        return (float)numbers.Sum() / numbers.Count;
     }
 }
